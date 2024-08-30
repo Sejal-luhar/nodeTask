@@ -1,0 +1,10 @@
+<%-include("./partials/header.ejs")%>
+<%-include("./partials/nav.ejs")%>
+<form action="/user/signin" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="text" name="password" placeholder="password">
+    <button>submit</button>
+
+    <p>dont have an account? <a href="/user/signup">create account</a></p>
+</form>
+<%-include("./partials/footer.ejs")%>
